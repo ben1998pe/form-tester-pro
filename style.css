@@ -1,0 +1,63 @@
+body {
+  font-family: 'Orbitron', monospace;
+  background: #0d0d0d;
+  color: #00ffe1;
+  letter-spacing: 0.05em;
+}
+
+h1, h2 {
+  color: #00ffe1;
+  text-shadow: 0 0 10px #00ffe1;
+}
+
+input, select, textarea {
+  background: #111;
+  border: 1px solid #00ffe1;
+  color: #00ffe1;
+  padding: 8px;
+  border-radius: 8px;
+  width: 100%;
+}
+
+textarea::selection,
+input::selection {
+  background: #00ffe1;
+  color: #111;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #a3f7bf;
+}
+
+button {
+  font-family: 'Orbitron', monospace;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #00ffe1, #8e2de2);
+  color: black;
+  padding: 10px 16px;
+  border-radius: 8px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  font-weight: bold;
+  box-shadow: 0 0 12px #00ffe1;
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #00ffe1, 0 0 10px #8e2de2;
+}
+
+#html-output {
+  background-color: #111;
+  color: #00ff88;
+  border: 1px solid #00ffe1;
+  box-shadow: 0 0 10px #00ffe1 inset;
+}
+
+#form-preview {
+  background: #1a1a1a;
+  border: 1px solid #00ffe1;
+  padding: 1rem;
+  border-radius: 12px;
+}

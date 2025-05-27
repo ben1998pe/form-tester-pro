@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Form Tester Pro</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+
+</head>
+<body class="bg-gray-900 text-white min-h-screen p-6">
+  <div class="max-w-5xl mx-auto">
+    <h1 class="text-3xl font-bold mb-6 text-center">🧪 Form Tester Pro</h1>
+
+    <!-- Form Builder -->
+    <div class="grid md:grid-cols-2 gap-6">
+      <div class="bg-gray-800 p-4 rounded-lg shadow">
+        <h2 class="text-xl mb-4">1️⃣ Agrega campos</h2>
+        <div class="space-y-3" id="fields-container">
+          <!-- Fields added here -->
+        </div>
+
+        <button onclick="addField()" class="mt-4 px-4 py-2 bg-blue-500 hover:bg-blue-600 rounded">
+          ➕ Añadir campo
+        </button>
+      </div>
+
+      <!-- Form Preview -->
+      <div class="bg-gray-800 p-4 rounded-lg shadow">
+        <h2 class="text-xl mb-4">2️⃣ Vista previa</h2>
+        <form id="form-preview" class="space-y-3 bg-gray-700 p-4 rounded"></form>
+      </div>
+    </div>
+
+    <!-- Code Output -->
+    <div class="mt-8 bg-gray-800 p-4 rounded shadow">
+      <h2 class="text-xl mb-2">3️⃣ Código generado</h2>
+      <textarea id="html-output" class="w-full h-64 p-2 bg-black text-green-400 font-mono rounded resize-none" readonly></textarea>
+      <button onclick="copyCode()" class="mt-2 px-4 py-2 bg-green-500 hover:bg-green-600 rounded">
+        📋 Copiar código
+      </button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
